@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Lato";
+}
+.para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: rgb(197, 197, 197);
+  cursor: pointer;
+}
+
+.active {
+  background: #1f29e2d6;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.hero {
+  height: calc(91.3vh - 11rem);
+  border: 2px solid black;
+}
+
+.logo {
+  font-family: "Monoton", cursive !important ;
+}
+
+@media (max-width: 500px) {
+  .hero {
+    height: calc(88.4vh - 11rem);
+    border: 2px solid black;
+  }
+
+  .logo {
+    text-align: center;
+    font-size: 2.1rem;
+  }
+
+  .form-heading {
+    display: none;
+  }
+  .li-list {
+    gap: 0.5rem;
+  }
+
+  .li-text {
+    font-size: 1.4rem;
+  }
+  .delete-button {
+    margin-top: 0.1rem;
+    font-size: 2rem;
+  }
+  .packing-conatiner {
+    padding-block: 1.1rem;
+
+    column-gap: 2rem;
+    row-gap: 3rem;
+  }
+  .form {
+    gap: 1.4rem;
+  }
+  .footer-text {
+    text-align: center;
+
+    padding-top: -1rem;
+  }
+}
